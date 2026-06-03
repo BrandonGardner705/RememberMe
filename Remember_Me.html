@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RememberMe — Never forget what matters</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; }
+  a { text-decoration: none; }
+
+  /* NAV */
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 64px; border-bottom: 1px solid #f0f0f0; }
+  .logo { font-size: 22px; font-weight: 800; color: #1a1a1a; }
+  .logo span { color: #c0392b; }
+  .nav-cta { background: #c0392b; color: #fff; border: none; border-radius: 10px; padding: 11px 24px; font-size: 14px; font-weight: 700; cursor: pointer; }
+
+  /* HERO */
+  .hero { text-align: center; padding: 90px 24px 70px; max-width: 660px; margin: 0 auto; }
+  .hero-badge { display: inline-block; background: #fff0f0; color: #c0392b; border-radius: 20px; padding: 7px 18px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+  .hero h1 { font-size: 56px; font-weight: 800; line-height: 1.08; margin-bottom: 22px; }
+  .hero h1 span { color: #c0392b; }
+  .hero p { font-size: 19px; color: #555; line-height: 1.65; margin-bottom: 38px; }
+  .hero-btns { display: flex; gap: 14px; justify-content: center; }
+  .btn-primary { background: #c0392b; color: #fff; border: none; border-radius: 10px; padding: 15px 36px; font-size: 16px; font-weight: 700; cursor: pointer; }
+  .btn-secondary { background: #fff; color: #c0392b; border: 2px solid #c0392b; border-radius: 10px; padding: 13px 36px; font-size: 16px; font-weight: 700; cursor: pointer; }
+  .hero-sub { font-size: 13px; color: #aaa; margin-top: 16px; }
+
+  /* HOW IT WORKS */
+  .section { padding: 70px 64px; }
+  .section-alt { background: #fafafa; }
+  .section-title { text-align: center; font-size: 34px; font-weight: 800; margin-bottom: 10px; }
+  .section-sub { text-align: center; color: #888; font-size: 16px; margin-bottom: 48px; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 920px; margin: 0 auto; }
+  .step { background: #fff; border-radius: 16px; padding: 26px 22px; border: 1px solid #eee; text-align: center; }
+  .step-icon { font-size: 40px; margin-bottom: 14px; }
+  .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  .step p { font-size: 13px; color: #888; line-height: 1.55; }
+
+  /* SMS PREVIEW */
+  .sms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 780px; margin: 0 auto; }
+  .sms-phone { background: #f4f4f4; border-radius: 16px; padding: 20px; }
+  .sms-label { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 14px; }
+  .bubble-wrap { display: flex; align-items: flex-end; gap: 8px; margin-bottom: 10px; }
+  .bubble-wrap.right { flex-direction: row-reverse; }
+  .avatar { width: 28px; height: 28px; border-radius: 50%; background: #c0392b; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+  .bubble { max-width: 80%; padding: 10px 14px; border-radius: 14px; font-size: 13px; line-height: 1.5; }
+  .bubble.system { background: #e8e8e8; color: #222; border-radius: 14px 14px 14px 4px; }
+  .bubble.user { background: #c0392b; color: #fff; border-radius: 14px 14px 4px 14px; }
+
+  /* FOR ANY COUPLE */
+  .tags { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+  .tag { background: #fff; border: 1px solid #eee; border-radius: 20px; padding: 10px 22px; font-size: 15px; font-weight: 500; }
+
+  /* CTA BOTTOM */
+  .cta-section { background: #1a0a0a; padding: 70px 24px; text-align: center; }
+  .cta-section h2 { font-size: 36px; font-weight: 800; color: #fff; margin-bottom: 14px; }
+  .cta-section p { color: #888; font-size: 16px; margin-bottom: 32px; }
+
+  footer { text-align: center; padding: 28px; color: #bbb; font-size: 12px; border-top: 1px solid #f0f0f0; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">💍 Remember<span>Me</span></div>
+  <button class="nav-cta">Get started — it's free</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">💬 All via text. No app needed.</div>
+  <h1>Never forget<br><span>what matters.</span></h1>
+  <p>Both of you sign up once. We text you before every birthday, anniversary, and special date — with gift ideas your partner will actually love.</p>
+  <div class="hero-btns">
+    <button class="btn-primary">Get started free →</button>
+    <button class="btn-secondary">See how it works</button>
+  </div>
+  <div class="hero-sub">Free. No app. Just texts. Works for any relationship.</div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section section-alt">
+  <div class="section-title">How it works</div>
+  <div class="section-sub">Set it up once. We do the rest.</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-icon">📲</div>
+      <h3>Both sign up</h3>
+      <p>You each enter your phone number and connect your calendars. Takes 2 minutes.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">🧠</div>
+      <h3>We learn what you love</h3>
+      <p>Before every date, we text the other person a quick quiz. Preferences stay fresh automatically.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">💬</div>
+      <h3>Text us anytime</h3>
+      <p>Drop a hint — "she mentioned wanting AirPods" — and we save it for the right moment.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">🎁</div>
+      <h3>Get perfect gift ideas</h3>
+      <p>We text you personalized suggestions before every important date. All via SMS.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SMS PREVIEW -->
+<div class="section">
+  <div class="section-title">All via text</div>
+  <div class="section-sub">Surveys go out when you sign up and before every important date — plus drop hints anytime</div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; max-width:820px; margin:0 auto 40px;">
+
+    <!-- Survey on signup -->
+    <div>
+      <div style="font-size:13px; font-weight:700; color:#c0392b; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:12px;">📋 On signup — survey sent to both</div>
+      <div class="sms-phone">
+        <div class="sms-label">📱 Her phone</div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Hi Sarah! Welcome to RememberMe 💍 Quick survey so your partner never gets it wrong — tap here: rememberme.app/survey</div>
+        </div>
+        <div class="bubble-wrap right">
+          <div class="bubble user">Done! That was easy 😊</div>
+        </div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Perfect, we've saved your preferences! We'll re-survey you before every important date to keep things fresh 🎁</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Survey before a date -->
+    <div>
+      <div style="font-size:13px; font-weight:700; color:#3498db; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:12px;">📅 30 days before her birthday — survey sent to him</div>
+      <div class="sms-phone">
+        <div class="sms-label">📱 His phone</div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Hey! Sarah's birthday is in 30 days 🎂 Let's make sure you nail it — quick survey: rememberme.app/survey</div>
+        </div>
+        <div class="bubble-wrap right">
+          <div class="bubble user">Filled it out!</div>
+        </div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Got it! Here are gift ideas based on what she loves right now → rememberme.app/gifts 🎁</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drop a hint -->
+  <div style="max-width:820px; margin:0 auto;">
+    <div style="font-size:13px; font-weight:700; color:#27ae60; text-transform:uppercase; letter-spacing:0.6px; margin-bottom:12px;">💬 Anytime — drop a hint by texting us directly</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px;">
+      <div class="sms-phone">
+        <div class="sms-label">📱 His phone — dropping a hint</div>
+        <div class="bubble-wrap right">
+          <div class="bubble user">She keeps mentioning she wants a Ninja blender and new running shoes</div>
+        </div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Saved! 👍 We'll include both in your gift suggestions before her next date.</div>
+        </div>
+      </div>
+      <div class="sms-phone">
+        <div class="sms-label">📱 Her phone — dropping a hint</div>
+        <div class="bubble-wrap right">
+          <div class="bubble user">Just so you know, he's been talking about a new camping tent lately</div>
+        </div>
+        <div class="bubble-wrap">
+          <div class="avatar">💍</div>
+          <div class="bubble system">Got it, saved! 🏕️ We'll remind you with some great tent options before his birthday.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOR ANY COUPLE -->
+<div class="section section-alt">
+  <div class="section-title">Works for any relationship</div>
+  <div class="section-sub">Not just married couples</div>
+  <div class="tags">
+    <div class="tag">💍 Married</div>
+    <div class="tag">💕 Dating</div>
+    <div class="tag">💒 Engaged</div>
+    <div class="tag">🌍 Long distance</div>
+    <div class="tag">👫 Any couple</div>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="cta-section">
+  <h2>Never miss a moment that matters.</h2>
+  <p>Free. No app. Sign up in 2 minutes.</p>
+  <button class="btn-primary" style="font-size:17px; padding:16px 44px;">Get started free →</button>
+</div>
+
+<footer>© 2026 RememberMe</footer>
+
+</body>
+</html>
